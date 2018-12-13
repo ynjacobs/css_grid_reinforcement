@@ -1,0 +1,179 @@
+
+/*** GENERAL SELECTORS ****************/
+
+body {
+  background-color: #eee;
+  color: #201a16;
+  font: 1em tahoma, sans-serif;
+  line-height: 1;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', georgia, serif;
+  margin: 1rem 0;
+}
+
+h1 {
+  font-size: 1.75em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.3125em;
+}
+
+p {
+  margin: 1em 0;
+  line-height: 1.4;
+}
+
+a {
+  color: inherit;
+}
+
+.btn {
+  display: inline-block;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  background-color: #eee;
+  color: #201a16;
+  font: 1em tahoma, sans-serif;
+  line-height: 2.5;
+  padding: 0 1em;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.ordered-list, .unordered-list {
+  padding-left: 1.25em;
+  margin: 1em 0;
+  line-height: 1.4;
+}
+
+.ordered-list {
+  list-style: decimal;
+}
+
+.unordered-list {
+  list-style: disc;
+}
+
+.inline-list li { /* any li inside the .inline-list */
+  display: inline-block;
+}
+
+.unmargin {
+  margin: 0;
+}
+
+
+/*** HEADER & FOOTER ****************/
+
+.header-block, .footer-block {
+  background-color: #201a16;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  padding: 0 1em;
+}
+
+.logo {
+  color: #fff;
+  font: 1.25em 'Playfair Display', georgia, serif;
+  letter-spacing: -0.025em;
+  line-height: 2.4;
+  text-transform: lowercase;
+}
+
+.hamburger {
+  width: 2.5em;
+  padding: 0 0.5em;
+  border: 0.0625em solid #fff;
+  border-radius: 0.25em;
+  background-color: transparent;
+  margin: 0.5em auto;
+}
+
+.hamburger .bar {  /* any .bar inside the .hamburger */
+  height: 0.125em;
+  background-color: #fff;
+  margin: 0.375em 0;
+}
+
+.menu-item {
+  margin: 1em 0;
+}
+
+.menu-item a {  /* any 'a' inside of a .menu-item */
+  color: white;
+  text-decoration: none;
+  font-size: 1.25em;
+}
+
+
+/*** MAIN CONTENT RULES ****************/
+
+.primary-headings {
+  border-left: 0.5em solid #8ac84b;
+  margin: 2em 0;
+  margin-left: 1em;
+  padding: 0 1em;
+}
+
+.primary-headings h2 {
+  color: #555;
+}
+
+.main-section {
+  padding: 0 1em;
+}
+
+.section-heading {
+  margin: 1rem 0;
+}
+
+.lessons {
+  background-color: aliceblue;
+  overflow: hidden;
+}
+
+.grading {
+  background-color: antiquewhite;
+  overflow: hidden;
+}
+
+.topics {
+  background-color: lightgoldenrodyellow;
+  overflow: hidden;
+}
+
+.lessons-grid {
+  margin: 1em 0;
+}
+
+.lesson {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 0 1em;
+  margin: 1em 0; /* this spacing can be replaced with grid-gap on the parent grid */
+}
+
+.article-img {
+  margin: 1em 0;
+  border: 1px solid #ddd;
+}
+
+.article-img img {
+  vertical-align: middle;
+}
+
+.readmore {
+  color: #fff;
+  background-color: #8ac84b;
+}
