@@ -177,3 +177,40 @@ a {
   color: #fff;
   background-color: #8ac84b;
 }
+
+
+
+
+/******************************************
+              MEDIA QUERIES
+*******************************************/
+
+@media screen and (min-width: 640px) {
+
+  .main-block {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .lesson-grid {
+    display: grid;
+    /* 2 column template! (1 fraction each) */
+    /* Use this as a guide:
+      https://codepen.io/roccop/pen/WLQJXY?editors=1100
+     */
+  }
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+  .main-block {
+    width: 880px;
+  }
+
+  .lesson-grid {
+    /* 3 column template! (1 fraction each) */
+  }
+
+}
