@@ -192,7 +192,7 @@ a {
     margin: 0 auto;
   }
 
-  .lesson-grid {
+  .lessons-grid {
     display: grid;
     /* 2 column template! (1 fraction each) */
     /* Use this as a guide:
