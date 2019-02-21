@@ -81,6 +81,8 @@ a {
   text-align: center;
   overflow: hidden;
   padding: 0 1em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .logo {
@@ -89,6 +91,11 @@ a {
   letter-spacing: -0.025em;
   line-height: 2.4;
   text-transform: lowercase;
+  text-align: left;
+}
+
+.nav-btn {
+  text-align: right;
 }
 
 .hamburger {
@@ -104,6 +111,10 @@ a {
   height: 0.125em;
   background-color: #fff;
   margin: 0.375em 0;
+}
+
+.nav-menu {
+  grid-column: 1 / span 2;
 }
 
 .menu-item {
@@ -128,6 +139,13 @@ a {
 
 .primary-headings h2 {
   color: #555;
+}
+
+/* TODO 3 */
+.main-block {
+  /* Restrict the maximum width of the .main-block to 1200px,
+  then ensure that block is centered within the layout */
+  /* Hint: how do you center a block element? */
 }
 
 .main-section {
@@ -161,7 +179,7 @@ a {
   background-color: #fff;
   border: 1px solid #ddd;
   padding: 0 1em;
-  margin: 1em 0; /* this spacing can be replaced with grid-gap on the parent grid */
+  margin: 1em 0;
 }
 
 .article-img {
@@ -194,10 +212,15 @@ a {
 
   .lessons-grid {
     display: grid;
+    /* TODO 1 */
     /* 2 column template! (1 fraction each) */
-    /* Use this as a guide:
+    /* Use this as a reminder of the syntax:
       https://codepen.io/roccop/pen/WLQJXY?editors=1100
-     */
+    */
+    /* TODO 5 */
+    /* set a grid-gap of 1em 
+    and make sure to remove the margin on each .lesson
+    to get an evenly spaced layout. */
   }
 
 }
@@ -205,12 +228,39 @@ a {
 
 @media screen and (min-width: 900px) {
 
+  .nav-btn {
+    display: none;
+  }
+
+  .header-block {
+    grid-column: 1 / span 1;
+  }
+
+  .menu-item {
+    display: inline-block;
+  }
+
   .main-block {
     width: 880px;
   }
 
-  .lesson-grid {
-    /* 3 column template! (1 fraction each) */
+  .lessons-grid {
+    /* TODO 2 */
+    /* 4 column template! (1 fraction each) */
   }
+
+  /* TODO 4 */
+  /* turn .main-block into a grid with the following template: */
+  /* ---------------------------
+  |      .main-header       |
+  ---------------------------
+  |        .lessons         |
+  ---------------------------
+  |  .grading  |  .topics   |
+  --------------------------- */
+  /* Hint: Don't think about shrinking the last two elements into the single column,
+  but instead think about stretching the first two across the template. */
+
+
 
 }
